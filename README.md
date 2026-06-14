@@ -29,11 +29,7 @@ citizens who are locked out by text-based, smartphone-first, literacy-gated chan
 <p align="center"><img src="assets/demo.gif" alt="HumQadam live voice demo" width="80%"></p>
 -->
 
-> 🎬 **Add a screenshot + demo GIF here to make the repo pop (2 min):**
-> 1. Run the app (see Quick start) and open `http://localhost:3000` in Chrome.
-> 2. **Screenshot** the home screen → save as `assets/screenshot-home.png`.
-> 3. **Record** a short voice run (ScreenToGif / Windows Game Bar) → save as `assets/demo.gif`.
-> 4. Uncomment the two `<img>` lines above, then `git add assets && git commit -m "docs: add screenshots" && git push`.
+
 
 ---
 

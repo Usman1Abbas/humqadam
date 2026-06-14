@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+api/.env
+.venv/
+venv/
+
+# Node / Next
+node_modules/
+web/.next/
+web/out/
+web/.env.local
+
+# OS / editor
+.DS_Store
+*.log

@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #f6f4ef;
+  color: #0d1b2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* gentle gradient backdrop */
+.bg-civic {
+  position: relative;
+  background: #f6f4ef;
+  overflow-x: hidden;
+}
+/* two soft, slowly drifting colour blooms — subtle life, no clutter */
+.bg-civic::before,
+.bg-civic::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+}
+.bg-civic::before {
+  width: 46vw;
+  height: 46vw;
+  top: -12vw;
+  right: -8vw;
+  background: rgba(27, 156, 133, 0.20);
+  animation: aurora 14s ease-in-out infinite;
+}
+.bg-civic::after {
+  width: 40vw;
+  height: 40vw;
+  bottom: -14vw;
+  left: -10vw;
+  background: rgba(233, 196, 106, 0.20);
+  animation: aurora 18s ease-in-out infinite reverse;
+}
+.bg-civic > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes aurora {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(4%, -3%) scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-civic::before,
+  .bg-civic::after { animation: none; }
+}

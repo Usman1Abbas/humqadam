@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cnic-what-is",
+    "topic": "cnic",
+    "question_en": "What is a CNIC and why do I need it?",
+    "text_en": "The CNIC (Computerized National Identity Card) is the national identity card NADRA issues to every Pakistani citizen aged 18 and above. It is mandatory for voting: you cannot register as a voter or cast a ballot without a valid CNIC, because the Election Commission of Pakistan (ECP) builds the electoral rolls directly from NADRA's CNIC database. A CNIC is also required for most government services, opening a bank account, getting a SIM, and receiving welfare support.",
+    "source_title": "NADRA — Computerized National Identity Card (CNIC)",
+    "source_url": "https://www.nadra.gov.pk/identityDocument/cnic",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "cnic-documents-needed",
+    "topic": "cnic",
+    "question_en": "What documents do I need to apply for a new CNIC?",
+    "text_en": "To apply for a first-time (new) CNIC, visit a NADRA Registration Center with: (1) your Form-B / Child Registration Certificate (CRC), or computerized birth certificate; (2) the original CNIC (or CNIC number) of a parent or sibling (a blood relative) for biometric verification — for a married woman this can be her husband's CNIC; (3) for a married woman applying with her husband's reference, the Nikah Nama (marriage certificate). If no blood relative is available, NADRA accepts a form attested by a gazetted officer or public representative. At the center NADRA captures your photograph, fingerprints, and signature. You can also start or book the process through the Pak Identity (Pak-ID) app.",
+    "source_title": "NADRA — How to apply for a CNIC",
+    "source_url": "https://www.nadra.gov.pk/identityDocument/cnic",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "cnic-women-facilitation",
+    "topic": "cnic",
+    "question_en": "Is there special help for women to get a CNIC?",
+    "text_en": "Yes. A woman can apply for her CNIC herself — she does not legally need a male guardian's permission, though a blood relative's CNIC number is needed for family verification. NADRA runs Mobile Registration Vans (MRVs) that travel to rural and remote areas so women do not have to travel far, and many centers have dedicated female-staffed counters. NADRA also periodically runs free or subsidized registration drives for women — ask at your nearest center or call the NADRA helpline 1777 to find current facilities and any fee waiver.",
+    "source_title": "NADRA — Inclusive registration & Mobile Registration Vans",
+    "source_url": "https://www.nadra.gov.pk/",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "cnic-fee-time",
+    "topic": "cnic",
+    "question_en": "How much does a CNIC cost and how long does it take?",
+    "text_en": "NADRA offers three processing categories for a Smart CNIC. As of 2025 the approximate fees and times are: Normal — about Rs 750, ready in roughly 30 days; Urgent — about Rs 1,500, roughly 12 days; Executive — about Rs 2,500, the fastest. NADRA revises these fees from time to time, so confirm the current rate at the center, on the Pak Identity app, or by calling 1777. You can track your application by sending your tracking number via SMS to 8400 or through the Pak Identity app.",
+    "source_title": "NADRA — CNIC fee categories & tracking (8400)",
+    "source_url": "https://www.nadra.gov.pk/customer-support",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "cnic-helpline",
+    "topic": "cnic",
+    "question_en": "How can I contact NADRA for help?",
+    "text_en": "NADRA runs a 24/7 helpline: dial 1777 from a mobile, or +92 51 111 786 100 from a landline, for information about identity services, application status, and complaints. There is also an automated IVR system and a web chat service on the NADRA website. To track a CNIC application, SMS your tracking ID to 8400, or use the Pak Identity (Pak-ID) app.",
+    "source_title": "NADRA — Customer Support",
+    "source_url": "https://www.nadra.gov.pk/customer-support",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "vote-register-how",
+    "topic": "voter",
+    "question_en": "How do I register to vote in Pakistan?",
+    "text_en": "Voter registration in Pakistan is linked to your CNIC: when you obtain or update your CNIC with NADRA, the Election Commission of Pakistan (ECP) uses those details to build the electoral rolls. You are registered to vote at the address recorded on your CNIC. So the most important step to become a voter is to get a valid CNIC and keep its address correct and up to date. If you have moved, update your address with NADRA so your vote is registered in the right constituency.",
+    "source_title": "ECP — Check your registration",
+    "source_url": "https://ecp.gov.pk/check-your-registration",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "vote-check-registration",
+    "topic": "voter",
+    "question_en": "How do I check if I am registered to vote?",
+    "text_en": "Use the ECP's 8300 SMS service, provided with NADRA: type your CNIC number without dashes or spaces and send it to 8300. You will receive your electoral area name, block code, and your serial number on the electoral roll. Standard SMS charges from your mobile operator normally apply (the ECP made the service free during the February 2024 general elections). If you get no result, you may not be registered — which usually means your CNIC details need to be created or updated with NADRA.",
+    "source_title": "ECP — Check your vote through SMS 8300",
+    "source_url": "https://ecp.gov.pk/check-your-vote-through-sms-8300",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "vote-polling-station",
+    "topic": "voter",
+    "question_en": "How do I find my polling station?",
+    "text_en": "Around election time, the ECP's 8300 SMS service also returns your assigned polling station when you send your CNIC number (without dashes) to 8300. Your polling station is based on the address registered on your CNIC. On election day, bring your original CNIC — it is the only document required to vote, and voting is free.",
+    "source_title": "ECP — Check your vote through SMS 8300",
+    "source_url": "https://ecp.gov.pk/check-your-vote-through-sms-8300",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "vote-why-matters",
+    "topic": "voter",
+    "question_en": "Why should I vote and what does my vote decide?",
+    "text_en": "Your vote elects representatives to the National Assembly and your Provincial Assembly, who make laws and decide local development, schools, health facilities, and how public money in your area is spent. Margins are often small, so each vote genuinely counts. Women's votes matter especially: under Section 9 of the Elections Act 2017, if women's turnout is below 10% of the total votes cast in a constituency, the ECP may presume women were prevented from voting and can declare the result void and order a re-poll — so women turning out protects the whole result.",
+    "source_title": "Elections Act 2017, Section 9 — women's turnout (PakVoter / ECP)",
+    "source_url": "https://pakvoter.org/election-laws-and-rules/",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "vote-women-eligibility",
+    "topic": "voter",
+    "question_en": "Can women vote on their own and what do they need?",
+    "text_en": "Yes. Any Pakistani citizen aged 18 or older with a valid CNIC is eligible to vote, regardless of gender. A woman does not need anyone's permission to vote and casts her ballot in private. The only requirement at the polling station is her original CNIC. Women vote at designated women's polling stations, or at combined stations with separate booths for women. No one may lawfully stop an eligible woman from voting.",
+    "source_title": "ECP — Voter eligibility & women's participation",
+    "source_url": "https://ecp.gov.pk/voter-awareness/check-your-registration",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "vote-election-day",
+    "topic": "voter",
+    "question_en": "What do I bring and do on election day?",
+    "text_en": "On election day, go to your assigned polling station (check it via 8300) during polling hours and bring only your original CNIC — nothing else is needed and nothing is paid. Polling staff verify your CNIC against the electoral roll, mark your thumb with indelible ink, and give you the ballot papers. Mark your choice in private, fold the ballot, and drop it in the box. At women's polling stations, women presiding and polling officers are available to help.",
+    "source_title": "ECP — How to cast your vote",
+    "source_url": "https://ecp.gov.pk",
+    "last_verified": "2026-06"
+  },
+  {
+    "id": "scope-refuse-partisan",
+    "topic": "guardrail",
+    "question_en": "Which party or candidate should I vote for?",
+    "text_en": "HumQadam is strictly non-partisan and does not recommend any party, candidate, or political view. Its only role is to help you understand the process — how to get a CNIC, how to register, how to check your status, and how to cast your vote. The choice of whom to vote for is yours alone and private.",
+    "source_title": "HumQadam — Non-partisan policy",
+    "source_url": "https://ecp.gov.pk",
+    "last_verified": "2026-06"
+  }
+]

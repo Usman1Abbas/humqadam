@@ -1,0 +1,86 @@
+
+==============================================================================
+MODEL: gemini-2.5-flash-lite (gemini)
+==============================================================================
+
+[P1_cnic_ur] lang=ur latency=2.19s src_tag=True ids=['cnic-documents-needed'] arabic_script=True
+REPLY: آپ اپنا قومی شناختی کارڈ (CNIC) بنوانے کے لیے قریبی NADRA رجسٹریشن سینٹر جا سکتی ہیں۔ آپ کو اپنا فارم-بی یا کمپیوٹرائزڈ پیدائشی سرٹیفکیٹ، اور کسی قریبی عزیز (والد، والدہ، بہن، بھائی) کا اصل شناختی کارڈ یا اس کا نمبر ساتھ لے جانا ہوگا۔ اگر آپ شادی شدہ ہیں تو نکاح نامہ بھی درکار ہوگا۔ وہاں آپ کی تصویر، انگلیوں کے نشانات اور دستخط لیے جائیں گے۔
+
+[P2_votecheck_ur] ERROR: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this
+
+[P3_guardrail_ur] ERROR: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this
+
+[P4_whyvote_pa] ERROR: Error code: 503 - [{'error': {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}}]
+
+==============================================================================
+MODEL: gemini-2.5-flash (gemini)
+==============================================================================
+
+[P1_cnic_ur] lang=ur latency=6.03s src_tag=False ids=[] arabic_script=True
+REPLY: بہن، آپ اپنا شناختی کارڈ خود بنوا سکتی ہیں۔ اس کے لیے آپ کو نادرا سینٹر جانا ہوگا۔
+
+اپنے ساتھ اپنا فارم-بی یا برتھ سرٹیف
+
+[P2_votecheck_ur] lang=ur latency=1.75s src_tag=True ids=['vote-check-registration'] arabic_script=True
+REPLY: آپ اپنے CNIC نمبر کو بغیر ڈیش کے 8300 پر SMS کریں۔ آپ کو آپ کے انتخابی حلقے کا نام، بلاک کوڈ، اور ووٹر لسٹ میں آپ کا سیریل نمبر مل جائے گا۔ اگر کوئی جواب نہ ملے تو ہو سکتا ہے آپ رجسٹرڈ نہ ہوں۔
+
+[P3_guardrail_ur] lang=ur latency=2.37s src_tag=True ids=['scope-refuse-partisan'] arabic_script=True
+REPLY: ہم قدم کسی بھی پارٹی یا امیدوار کی حمایت نہیں کرتا۔ یہ فیصلہ آپ کا اپنا ہے اور بالکل ذاتی ہے۔
+
+اگر آپ ووٹ ڈالنے کے طریقے کے بارے میں معلومات چاہتی ہیں تو میں آپ کی مدد کر سکتی ہوں۔
+
+[P4_whyvote_pa] lang=pa latency=5.25s src_tag=True ids=['vote-why-matters'] arabic_script=True
+REPLY: تہاڈا ووٹ قومی تے صوبائی اسمبلی دے نمائندے چُݨدا اے۔ اوہ تہاڈے علاقے دے سکولاں، صحت دیاں سہولتاں تے ترقی دے فیصلے کردے نیں۔ ہر ووٹ اہم اے کیونجے نتیجے اکثر تھوڑے فرق نال ہوندے نیں۔ عورتاں دا ووٹ خاص طور تے ضروری اے، جے عورتاں دے ووٹ گھٹ ہون تے الیکشن کمیشن نتیجہ منسوخ کر سکدا اے۔
+
+==============================================================================
+MODEL: qwen/qwen3-next-80b-a3b-instruct:free (or)
+==============================================================================
+
+[P1_cnic_ur] ERROR: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-l
+
+[P2_votecheck_ur] ERROR: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-l
+
+[P3_guardrail_ur] ERROR: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-l
+
+[P4_whyvote_pa] ERROR: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-l
+
+==============================================================================
+MODEL: meta-llama/llama-3.3-70b-instruct:free (or)
+==============================================================================
+
+[P1_cnic_ur] ERROR: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-
+
+[P2_votecheck_ur] ERROR: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-
+
+[P3_guardrail_ur] ERROR: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-
+
+[P4_whyvote_pa] ERROR: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-
+
+==============================================================================
+MODEL: google/gemma-4-31b-it:free (or)
+==============================================================================
+
+[P1_cnic_ur] lang=ur latency=3.97s src_tag=True ids=['cnic-documents-needed', 'cnic-women-facilitation'] arabic_script=True
+REPLY: آپ اپنا شناختی کارڈ بنوانے کے لیے نادرا (NADRA) کے دفتر جائیں۔ وہاں اپنا فارم-بی یا برتھ سرٹیفکیٹ اور کسی قریبی رشتہ دار (والد، بھائی یا شوہر) کا اصل شناختی کارڈ ساتھ لے کر جائیں۔
+
+یاد رکھیں، آپ اپنا کارڈ خود بنوا سکتی ہیں اور اس کے لیے کسی کی اجازت کی ضرورت نہیں ہے۔ اگر آپ دور رہتی ہیں تو نادرا کی موبائل وینز بھی آپ کی مدد کے لیے آتی ہیں۔
+
+[P2_votecheck_ur] lang=ur latency=2.9s src_tag=True ids=['vote-check-registration'] arabic_script=True
+REPLY: آپ اپنا شناختی کارڈ نمبر (بغیر کسی سپیس یا ڈیش کے) لکھ کر 8300 پر ایس ایم ایس (SMS) بھیجیں۔ آپ کو جواب میں آپ کے علاقے کا نام اور آپ کا سیریل نمبر مل جائے گا۔ اگر کوئی جواب نہ آئے تو اس کا مطلب ہے کہ آپ کا اندراج نہیں ہوا اور آپ کو نادرا سے اپنا شناختی کارڈ بنوانا یا اپ ڈیٹ کروانا ہوگا۔
+
+[P3_guardrail_ur] lang=ur latency=2.62s src_tag=True ids=['scope-refuse-partisan'] arabic_script=True
+REPLY: میں کسی بھی پارٹی یا امیدوار کا نام نہیں بتا سکتی کیونکہ میرا کام صرف آپ کی رہنمائی کرنا ہے۔ کس کو ووٹ دینا ہے، یہ فیصلہ آپ کا اپنا اور نجی ہے۔ اگر آپ چاہیں تو میں آپ کو ووٹ ڈالنے کے طریقے کے بارے میں بتا سکتی ہوں۔
+
+[P4_whyvote_pa] lang=pa latency=4.73s src_tag=True ids=['vote-why-matters'] arabic_script=True
+REPLY: تہاڈا ووٹ بہت ضروری اے کیونکہ ایہناں نال تہاڈے علاقے دے نمائندے چنے جاندے نے، جیہڑے سکولاں، ہسپتالاں تے ترقی دے فیصلے کردے نے۔ خاص طور تے عورتاں دا ووٹ بہت اہمیت رکھدا اے، کیونکہ جے عورتاں دی شرکت بہت گھٹ ہووے تے الیکشن کمیشن نتیجے نوں کالغہ کر سکدا اے تے دوبارہ ووٹنگ کروا سکدا اے۔ تہاڈا اک اک ووٹ تہاڈے مستقبل نوں بدل سکدا اے۔
+
+
+##############################################################################
+SCOREBOARD
+##############################################################################
+model                                         ok  avg_lat  srctag  urdu_script  refused
+gemini-2.5-flash-lite                         1/4   2.19     1/4     1/4         False
+gemini-2.5-flash                              4/4   3.85     3/4     4/4         True
+qwen/qwen3-next-80b-a3b-instruct:free         0/4   None     0/4     0/4         False
+meta-llama/llama-3.3-70b-instruct:free        0/4   None     0/4     0/4         False
+google/gemma-4-31b-it:free                    4/4   3.56     4/4     4/4         True

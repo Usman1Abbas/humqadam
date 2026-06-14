@@ -1,13 +1,39 @@
-# HumQadam (ہم قدم) — Voice-First Civic Assistant
+<p align="center">
+  <img src="assets/banner.svg" alt="HumQadam — voice-first civic assistant" width="100%">
+</p>
 
-> Your vote starts with a conversation, not a form.
+<h1 align="center">HumQadam (ہم قدم) — Voice-First Civic Assistant</h1>
+
+<p align="center"><em>Your vote starts with a conversation, not a form.</em></p>
+
+<p align="center">
+  <img alt="status" src="https://img.shields.io/badge/status-MVP%20working-1b9c85">
+  <img alt="frontend" src="https://img.shields.io/badge/frontend-Next.js%20%2B%20TypeScript-0d1b2a">
+  <img alt="backend" src="https://img.shields.io/badge/backend-FastAPI-125a4d">
+  <img alt="LLM" src="https://img.shields.io/badge/LLM-Gemini%20%2F%20Gemma%20(free)-e9c46a">
+  <img alt="languages" src="https://img.shields.io/badge/languages-Urdu%20%C2%B7%20Punjabi%20%C2%B7%20Pashto-1b9c85">
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-blue">
+</p>
 
 HumQadam lets any citizen **talk** — in Urdu, Punjabi or Pashto — and get clear, spoken
 guidance on their **CNIC, voter registration, polling station, and how to vote**, answered
 **only from verified government sources**. Built for low-literacy women, rural, and elderly
 citizens who are locked out by text-based, smartphone-first, literacy-gated channels.
 
-Hackathon submission — **Theme 1: Democracy, Inclusion & Civic Participation.**
+> Built for **Theme 1: Democracy, Inclusion & Civic Participation.**
+
+## 📸 Screenshots
+
+<!-- Once you add the files below, uncomment these lines to display them:
+<p align="center"><img src="assets/screenshot-home.png" alt="HumQadam home — tap to talk" width="80%"></p>
+<p align="center"><img src="assets/demo.gif" alt="HumQadam live voice demo" width="80%"></p>
+-->
+
+> 🎬 **Add a screenshot + demo GIF here to make the repo pop (2 min):**
+> 1. Run the app (see Quick start) and open `http://localhost:3000` in Chrome.
+> 2. **Screenshot** the home screen → save as `assets/screenshot-home.png`.
+> 3. **Record** a short voice run (ScreenToGif / Windows Game Bar) → save as `assets/demo.gif`.
+> 4. Uncomment the two `<img>` lines above, then `git add assets && git commit -m "docs: add screenshots" && git push`.
 
 ---
 

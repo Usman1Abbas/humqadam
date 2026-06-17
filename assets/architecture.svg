@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="640" viewBox="0 0 1180 640" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#137a68"/>
+    </marker>
+    <style>
+      .lane  { fill:#ffffff; stroke:#d9d2c4; stroke-width:1.5; rx:16; }
+      .lbl   { fill:#0d1b2a; font-size:18px; font-weight:700; }
+      .box   { rx:12; stroke-width:1.5; }
+      .bt    { fill:#0d1b2a; font-size:14.5px; font-weight:600; }
+      .bs    { fill:#5b6b66; font-size:12.5px; }
+      .badge { fill:#1b9c85; }
+      .bn    { fill:#ffffff; font-size:13px; font-weight:700; }
+      .flow  { stroke:#137a68; stroke-width:2.2; fill:none; }
+    </style>
+  </defs>
+
+  <rect width="1180" height="640" fill="#f6f4ef"/>
+  <text x="40" y="46" fill="#0d1b2a" font-size="26" font-weight="800">HumQadam — System Architecture</text>
+  <text x="40" y="72" fill="#5b6b66" font-size="14">Voice in → grounded answer → voice out. The AI answers only from verified sources.</text>
+
+  <!-- Lanes -->
+  <rect class="lane" x="30"  y="96" width="350" height="510"/>
+  <rect class="lane" x="410" y="96" width="360" height="510"/>
+  <rect class="lane" x="800" y="96" width="350" height="510"/>
+  <text class="lbl" x="50"  y="126">Browser — Next.js (Vercel)</text>
+  <text class="lbl" x="430" y="126">Backend — FastAPI (Render)</text>
+  <text class="lbl" x="820" y="126">AI &amp; Data — 100% free</text>
+
+  <!-- C1 boxes -->
+  <g>
+    <rect class="box" x="55" y="150" width="300" height="64" fill="#e6f5f1" stroke="#1b9c85"/>
+    <circle class="badge" cx="78" cy="174" r="12"/><text class="bn" x="74" y="179">1</text>
+    <text class="bt" x="100" y="172">User speaks 🎤</text>
+    <text class="bs" x="100" y="192">Urdu · Punjabi · Pashto · English</text>
+  </g>
+  <g>
+    <rect class="box" x="55" y="232" width="300" height="64" fill="#e6f5f1" stroke="#1b9c85"/>
+    <circle class="badge" cx="78" cy="256" r="12"/><text class="bn" x="74" y="261">2</text>
+    <text class="bt" x="100" y="254">Web Speech API — STT</text>
+    <text class="bs" x="100" y="274">on-device, no key (Chrome/Edge)</text>
+  </g>
+  <g>
+    <rect class="box" x="55" y="470" width="300" height="76" fill="#e6f5f1" stroke="#1b9c85"/>
+    <circle class="badge" cx="78" cy="496" r="12"/><text class="bn" x="74" y="501">6</text>
+    <text class="bt" x="100" y="494">Playback + transcript</text>
+    <text class="bs" x="100" y="514">🔊 audio · chat bubbles</text>
+    <text class="bs" x="100" y="532">+ clickable source cards</text>
+  </g>
+
+  <!-- C2 boxes -->
+  <g>
+    <rect class="box" x="435" y="150" width="310" height="64" fill="#fbf3da" stroke="#e0b94e"/>
+    <circle class="badge" cx="458" cy="174" r="12"/><text class="bn" x="454" y="179">3</text>
+    <text class="bt" x="480" y="172">POST /chat</text>
+    <text class="bs" x="480" y="192">text + language + history</text>
+  </g>
+  <g>
+    <rect class="box" x="435" y="232" width="310" height="86" fill="#fbf3da" stroke="#e0b94e"/>
+    <circle class="badge" cx="458" cy="258" r="12"/><text class="bn" x="454" y="263">4</text>
+    <text class="bt" x="480" y="254">RAG grounding</text>
+    <text class="bs" x="480" y="274">inject verified KB into prompt</text>
+    <text class="bs" x="480" y="292">→ LLM chain → parse [[SOURCES]]</text>
+  </g>
+  <g>
+    <rect class="box" x="435" y="336" width="310" height="58" fill="#fbf3da" stroke="#e0b94e"/>
+    <circle class="badge" cx="458" cy="361" r="12"/><text class="bn" x="454" y="366">5</text>
+    <text class="bt" x="480" y="360">reply + cited sources</text>
+  </g>
+  <g>
+    <rect class="box" x="435" y="470" width="310" height="64" fill="#fbf3da" stroke="#e0b94e"/>
+    <text class="bt" x="455" y="498">POST /tts</text>
+    <text class="bs" x="455" y="518">text → speech audio (mp3)</text>
+  </g>
+
+  <!-- C3 boxes -->
+  <g>
+    <rect class="box" x="820" y="232" width="310" height="86" fill="#eef0ee" stroke="#9aa6a1"/>
+    <text class="bt" x="840" y="262">Knowledge Base</text>
+    <text class="bs" x="840" y="282">12 verified NADRA/ECP entries</text>
+    <text class="bs" x="840" y="300">source URL + verified date</text>
+  </g>
+  <g>
+    <rect class="box" x="820" y="150" width="310" height="64" fill="#eef0ee" stroke="#9aa6a1"/>
+    <text class="bt" x="840" y="178">LLM fallback chain</text>
+    <text class="bs" x="840" y="198">Flash-Lite → Gemma-4-31B → Flash</text>
+  </g>
+  <g>
+    <rect class="box" x="820" y="470" width="310" height="64" fill="#eef0ee" stroke="#9aa6a1"/>
+    <text class="bt" x="840" y="498">edge-tts (ur-PK-UzmaNeural)</text>
+    <text class="bs" x="840" y="518">→ browser-voice fallback</text>
+  </g>
+
+  <!-- Flows -->
+  <path class="flow" d="M205,214 L205,232" marker-end="url(#arrow)"/>
+  <path class="flow" d="M355,264 L435,182" marker-end="url(#arrow)"/>
+  <path class="flow" d="M745,275 L820,265" marker-end="url(#arrow)"/>
+  <path class="flow" d="M745,265 L820,190" marker-end="url(#arrow)"/>
+  <path class="flow" d="M590,214 L590,232" marker-end="url(#arrow)"/>
+  <path class="flow" d="M590,318 L590,336" marker-end="url(#arrow)"/>
+  <path class="flow" d="M435,365 L205,470" marker-end="url(#arrow)"/>
+  <path class="flow" d="M435,502 L355,502" marker-end="url(#arrow)" />
+  <path class="flow" d="M745,502 L820,502" marker-end="url(#arrow)"/>
+  <path class="flow" d="M820,510 L360,520" marker-end="url(#arrow)"/>
+
+  <text x="40" y="626" fill="#5b6b66" font-size="12.5">Grounded (no hallucination) · non-partisan &amp; jailbreak-tested · free LLM fallback chain · ephemeral (no PII stored)</text>
+</svg>

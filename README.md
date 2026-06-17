@@ -40,14 +40,10 @@ citizens who are locked out by text-based, smartphone-first, literacy-gated chan
   gap those skip, by **voice**, in the user's **mother tongue**, grounded in **cited official sources**.
 
 ## Architecture
-```
-Browser (Next.js)                         FastAPI backend
-─────────────────                         ───────────────
-Web Speech API  ──speech→text──►  POST /chat ──► RAG grounding (curated ECP/NADRA KB)
-(Urdu/regional STT, zero key)                 └─► LLM fallback chain (Flash-Lite → Gemma → Flash)
-                                              ◄── reply + cited sources
-audio playback  ◄──mp3──────────  POST /tts  ──► edge-tts (ur-PK-UzmaNeural, free, no key)
-```
+
+<p align="center">
+  <img src="assets/architecture.svg" alt="HumQadam architecture — Browser (Next.js) → FastAPI backend → AI & Data" width="100%">
+</p>
 - **100% free, no single rate-limit point of failure:** the LLM is a **fallback chain** — it tries
   Gemini Flash-Lite, then Gemma-4-31B (OpenRouter free), then Gemini Flash, falling through on any
   429/error. Needs `GEMINI_API_KEY` (+ `OPENROUTER_API_KEY` for the middle tier). STT (browser) and

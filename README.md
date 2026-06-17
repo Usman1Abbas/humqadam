@@ -44,14 +44,15 @@ citizens who are locked out by text-based, smartphone-first, literacy-gated chan
 Browser (Next.js)                         FastAPI backend
 ─────────────────                         ───────────────
 Web Speech API  ──speech→text──►  POST /chat ──► RAG grounding (curated ECP/NADRA KB)
-(Urdu/regional STT, zero key)                 └─► LLM (Gemini 2.5 Flash-Lite — strong Urdu)
+(Urdu/regional STT, zero key)                 └─► LLM fallback chain (Flash-Lite → Gemma → Flash)
                                               ◄── reply + cited sources
 audio playback  ◄──mp3──────────  POST /tts  ──► edge-tts (ur-PK-UzmaNeural, free, no key)
 ```
-- **Only key required:** one LLM key. **Gemini** is the default (best Urdu, reliable free tier);
-  OpenRouter is supported as an alternative. The backend auto-selects Gemini if `GEMINI_API_KEY`
-  is set. STT (browser) and TTS (edge-tts/browser fallback) need no key.
-- **Provider auto-select** lives in `api/main.py`; switch with `LLM_PROVIDER=gemini|openrouter`.
+- **100% free, no single rate-limit point of failure:** the LLM is a **fallback chain** — it tries
+  Gemini Flash-Lite, then Gemma-4-31B (OpenRouter free), then Gemini Flash, falling through on any
+  429/error. Needs `GEMINI_API_KEY` (+ `OPENROUTER_API_KEY` for the middle tier). STT (browser) and
+  TTS (edge-tts with automatic browser-voice fallback) need no key.
+- **The chain lives in `api/main.py`**; override the order with the `LLM_CHAIN` env var.
 - **Grounding:** every answer is generated from a curated, source-cited knowledge base and the
   model is forced to emit the source ids it used, which the UI renders as clickable source cards.
 - **Non-partisan by construction:** the system prompt refuses any party/candidate recommendation.

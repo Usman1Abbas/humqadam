@@ -1,0 +1,19 @@
+# Render Blueprint — deploys the HumQadam FastAPI backend (free tier).
+# In Render: New → Blueprint → connect this repo. Then set the two secret
+# env vars (GEMINI_API_KEY, OPENROUTER_API_KEY) in the dashboard.
+services:
+  - type: web
+    name: humqadam-api
+    runtime: python
+    rootDir: api
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.8"
+      - key: GEMINI_API_KEY
+        sync: false        # set in dashboard (secret)
+      - key: OPENROUTER_API_KEY
+        sync: false        # set in dashboard (secret; free account is fine)
